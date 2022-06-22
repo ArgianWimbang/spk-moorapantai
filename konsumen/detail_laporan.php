@@ -32,7 +32,7 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
   <style>
     body {
-      background-color: #f0f0f0;
+      background-image: url(../img/galeri/22.jpg);
     }
 
     .container {
@@ -71,8 +71,8 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
 <body bgcolor="f0f0f0">
   <form method="post" action="perhitungan.php">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#"><img src="../img/gmd.png" width="50"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#"><img src="../img/gmd1.png" width="70"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,14 +82,12 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
             <font size="4"><b>Home</b> </font><span class="sr-only">(current)</span>
           </a>
           <a class="nav-link" href="data_sepatu_sport.php">
-            <font size="4"><b>Data Sepatu Sport</b></font>
+            <font size="4"><b>Data Pantai</b></font>
           </a>
           <a class="nav-link" href="laporan.php">
-            <font size="4"><b>Laporan</b></font>
+            <font size="4"><b>Hasil</b></font>
           </a>
-          <a class="nav-link" href="tentang.php">
-            <font size="4"><b>Tentang</b></font>
-          </a>
+          
           <!-- membuat tobol logout menjadi lebih ke kanan dan bisa menyesuaikan di mobile juga. 1&nbsp = 1x spasi -->
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -103,6 +101,17 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
           <a class="log nav-link" href="../logout.php">
             <font size="4"><b>Logout</b></font>
             <img src="../img/logout.png" width="30">
@@ -114,8 +123,8 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
   <br>
   <div class="container bg-light shadow p-3 mb-5">
-    <div class="alert alert-info">
-      <center><b>DETAIL LAPORAN</b></center>
+    <div class="alert alert-secondary">
+      <center><b>DETAIL HASIL</b></center>
     </div>
 
     <a href="laporan.php" class="btn btn-primary">
@@ -125,7 +134,7 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
     <div class="table-responsive shadow p-3 mb-5">
 
       <table class="table table-striped">
-        <tr class="bg-info">
+        <tr class="bg-secondary">
           <th>Kode</th>
           <th>Id Alternatif</th>
           <th>Nama Alternatif</th>
@@ -150,9 +159,9 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
   </div>
 
-  <div class="col-md-12 bg-primary">
+  <div class="col-md-12 bg-secondary">
     <div class="copyright">
-      <h5>Andika Prayoga 2021</h5>
+      <h6>Copyright&copy; argianriska 2022</h6>
     </div>
   </div>
 

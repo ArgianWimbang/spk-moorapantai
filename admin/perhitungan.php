@@ -21,15 +21,15 @@ if (!isset($_POST['id_alternatif'])) {
   //JIKA MENERIMA DATA ID ALTERNATIF MAKA JALANKAN HALAMAN perhitungan.php
 
   //BUKA TABLE KRITERIA DAN TAMPILKAN FIELD MEREK
-  $datakriteriamerek = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'merek'");
+  $datakriteriamerek = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'Tiket Masuk'");
   $merek = mysqli_fetch_assoc($datakriteriamerek);
 
   //BUKA TABLE KRITERIA DAN TAMPILKAN FIELD BAHAN
-  $datakriteriabahan = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'bahan'");
+  $datakriteriabahan = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'Jarak'");
   $bahan = mysqli_fetch_assoc($datakriteriabahan);
 
   //BUKA TABLE KRITERIA DAN TAMPILKAN FIELD BERAT
-  $datakriteriaberat = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'berat'");
+  $datakriteriaberat = mysqli_query($con, "SELECT * FROM kriteria WHERE kriteria = 'Fasilitas'");
   $berat = mysqli_fetch_assoc($datakriteriaberat);
 
   // //BUKA TABLE KRITERIA DAN TAMPILKAN FIELD HARGA
@@ -175,7 +175,6 @@ if (!isset($_POST['id_alternatif'])) {
             <th>Tiket Masuk (C1)</th>
             <th>Jarak (C2)</th>
             <th>Fasilitas (C3)</th>
-            <!-- <th>Harga (C4)</th> -->
           </tr>
 
           <?php
@@ -331,8 +330,10 @@ if (!isset($_POST['id_alternatif'])) {
                   $merek1 = $merek['bobot'] * $c1;
                   // echo $merek['bobot'] . " * " . round($c1, 6) . " = " . round($merek1, 6);
                   echo round($merek1, 3);
-                  ?>
-                  <?php echo $merek ?>
+                  //printf ($merek);
+                  // //?>
+                  <?php 
+                  error_log(json_encode($merek))?>
                 </td>
                 <!-- -----------C2----------- -->
                 <td>
@@ -395,19 +396,19 @@ if (!isset($_POST['id_alternatif'])) {
               <?php $c1 = $sepatu['c1'] / $akar1;
               $merek1 = $merek['bobot'] * $c1;
               // echo $merek['bobot'] . " * " . round($c1, 6) . " = " . round($merek1, 6);
-              round($merek1, 4);
+              round($merek1, 3);
               ?>
               <!-- -----------C2----------- -->
               <?php $c2 = $sepatu['c2'] / $akar2;
               $bahan1 = $bahan['bobot'] * $c2;
               // echo $bahan['bobot'] . " * " . round($c2, 6) . " = " . round($bahan1, 6);
-              round($bahan1, 4);
+              round($bahan1, 3);
               ?>
               <!-- -----------C3----------- -->
               <?php $c3 = $sepatu['c3'] / $akar3;
               $berat1 = $berat['bobot'] * $c3;
               // echo $berat['bobot'] . " * " . round($c3, 6) . " = " . round($berat1, 6);
-              round($berat1, 4);
+              round($berat1, 3);
               ?>
               
 
@@ -423,10 +424,10 @@ if (!isset($_POST['id_alternatif'])) {
                   <!-- --------------TOTAL HASIL-------------- -->
                   <td>
                     <?php
-                    $totalll = $merek1 + $bahan1 + $berat1 - $harga1;
-                    echo round($totalll, 4);
+                    $totalll =  $berat1 - $merek1 + $bahan1;
+                    echo round($totalll, 3);
                     ?>
-                    <input type="hidden" name="total_hasil[]" value="<?= round($totalll, 4); ?>">
+                    <input type="hidden" name="total_hasil[]" value="<?= round($totalll, 3); ?>">
                   </td>
                 </tr>
 

@@ -58,6 +58,8 @@ if (isset($_POST['login'])) {
 
 
     .col-md-3 h1 {
+      color: blue;
+      font-size: 2pt;
       padding: 10px;
       text-transform: uppercase;
     }
@@ -79,9 +81,9 @@ if (isset($_POST['login'])) {
 <body bgcolor="grey">
 
   <center>
-    <br><br><br><br><br>
+    <br><br><br><br><br><br>
 
-    <div class="col-md-3" style="padding: 10px; ">
+    <div class="col-md-2" style="padding: 0px; ">
       <?php
       if (isset($_GET['pesan'])) {
 
@@ -98,12 +100,12 @@ if (isset($_POST['login'])) {
 
       <div class="col-md-13 bg-info">
         <center>
-          <h1>Sign In</h1>
+          <h1 style="color: whitesmoke; style="font-size: 30px;">SIGN IN</h1>
         </center>
       </div>
-
+    <br>
     </div>
-    <div class="col-md-3 bg-light">
+    <div class="col-md-2 bg-light">
       <form method="post">
         <div class="panel">
           <div class="panel-body">

@@ -32,7 +32,7 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <style>
     body {
-      background-color: #f0f0f0;
+      background-image: url(../img/galeri/22.jpg);
     }
 
     .container {
@@ -70,8 +70,8 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
 <body bgcolor="f0f0f0">
   <form method="post" action="perhitungan.php">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#"><img src="../img/gmd.png" width="50"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#"><img src="../img/gmd1.png" width="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -81,16 +81,16 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
             <font size="4"><b>Home</b> </font><span class="sr-only">(current)</span>
           </a>
           <a class="nav-link" href="data_kriteria.php">
-            <font size="4"><b>Data Kritria</b></font>
+            <font size="4"><b>Data Kriteria</b></font>
           </a>
           <a class="nav-link" href="data_sepatu_sport.php">
-            <font size="4"><b>Data Sepatu Sport</b></font>
+            <font size="4"><b>Data Pantai</b></font>
           </a>
           <a class="nav-link" href="#">
-            <font size="4"><b><button type="submit" name="perhitungan" class="btn btn-primary" style="font-size: 20px; margin-top: -10px;"><b>Perhitungan</b></button></b></font>
+            <font size="4"><b><button type="submit" name="perhitungan" class="btn btn-secondary" style="font-size: 20px; margin-top: -10px;"><b>Perhitungan</b></button></b></font>
           </a>
           <a class="nav-link" href="laporan.php">
-            <font size="4"><b>Laporan</b></font>
+            <font size="4"><b>Hasil</b></font>
           </a>
         </div>
 
@@ -105,8 +105,8 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
   <br>
   <div class="container bg-light shadow p-3 mb-5">
-    <div class="alert alert-info">
-      <center><b>DETAIL LAPORAN</b></center>
+    <div class="alert alert-secondary">
+      <center><b>DETAIL HASIL</b></center>
     </div>
 
     <a href="laporan.php" class="btn btn-primary mb-3">Kembali</a>
@@ -114,7 +114,7 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
     <div class="table-responsive p-4">
 
       <table class="table table-striped shadow">
-        <tr class="bg-info">
+        <tr class="bg-secondary">
           <th>Kode</th>
           <th>Id Alternatif</th>
           <th>Nama Alternatif</th>
@@ -139,9 +139,9 @@ $data = query("SELECT * FROM nilai WHERE kode_hasil = '$kode' ORDER BY total DES
 
   </div>
 
-  <div class="col-md-12 bg-primary">
+  <div class="col-md-12 bg-secondary">
     <div class="copyright">
-      <h6>Copyright&copy; putrapt 2021</h6>
+      <h6>Copyright&copy; argianriska 2022</h6>
     </div>
   </div>
 

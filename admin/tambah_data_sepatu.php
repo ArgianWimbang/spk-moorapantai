@@ -37,7 +37,7 @@ if (isset($_POST['simpan'])) {
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <style>
     body {
-      background-color: #f0f0f0;
+      background-image: url(../img/galeri/22.jpg);
     }
 
     .container {
@@ -71,8 +71,8 @@ if (isset($_POST['simpan'])) {
 
 <body bgcolor="f0f0f0">
   <form method="post" action="perhitungan.php">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#"><img src="../img/gmd.png" width="50"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#"><img src="../img/gmd1.png" width="50"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -82,16 +82,16 @@ if (isset($_POST['simpan'])) {
             <font size="4"><b>Home</b> </font><span class="sr-only">(current)</span>
           </a>
           <a class="nav-link" href="data_kriteria.php">
-            <font size="4"><b>Data Kritria</b></font>
+            <font size="4"><b>Data Kriteria</b></font>
           </a>
           <a class="nav-link" href="data_sepatu_sport.php">
-            <font size="4"><b>Data Sepatu Sport</b></font>
+            <font size="4"><b>Data Pantai</b></font>
           </a>
           <a class="nav-link" href="#">
-            <font size="4"><b><button type="submit" name="perhitungan" class="btn btn-primary" style="font-size: 20px; margin-top: -10px;"><b>Perhitungan</b></button></b></font>
+            <font size="4"><b><button type="submit" name="perhitungan" class="btn btn-secondary" style="font-size: 20px; margin-top: -10px;"><b>Perhitungan</b></button></b></font>
           </a>
           <a class="nav-link" href="laporan.php">
-            <font size="4"><b>Laporan</b></font>
+            <font size="4"><b>Hasil</b></font>
           </a>
         </div>
 
@@ -107,8 +107,8 @@ if (isset($_POST['simpan'])) {
 
   <br>
   <div class="container bg-light shadow p-3 mb-5">
-    <div class="alert alert-info">
-      <center><b>TAMBAH DATA SEPATU SPORT</b></center>
+    <div class="alert alert-secondary">
+      <center><b>TAMBAH DATA PANTAI</b></center>
     </div>
 
     <div class="col-md-7">
@@ -146,13 +146,7 @@ if (isset($_POST['simpan'])) {
               <td width="500"> <input type="text" name="c3" class="form-control" autocomplete="off"></td>
             </tr>
 
-            <tr>
-              <td><label>Harga (C4)</label></td>
-              <td> : </td>
-              <td width="500"> <input type="text" name="c4" class="form-control" autocomplete="off"></td>
-            </tr>
-
-
+            
             <td></td>
             <td></td>
             <td><button type="submit" name="simpan" class="btn btn-success">Simpan</button> &nbsp;&nbsp;&nbsp;
@@ -168,9 +162,9 @@ if (isset($_POST['simpan'])) {
   </div>
 
 
-  <div class="col-md-12 bg-primary">
+  <div class="col-md-12 bg-secondary">
     <div class="copyright">
-      <h6>Copyright&copy; putrapt 2021</h6>
+      <h6>Copyright&copy; argianriska 2022</h6>
     </div>
   </div>
 

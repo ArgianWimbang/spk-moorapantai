@@ -23,7 +23,7 @@ if (!isset($_SESSION['status'])) {
 
   <style>
     body {
-      background-image: url(../img/galeri/8.JPG);
+      background-image: url(../img/galeri/22.JPG);
       background-size: cover;
     }
 
@@ -68,8 +68,8 @@ if (!isset($_SESSION['status'])) {
 
 <body bgcolor="f0f0f0">
   <form method="post" action="perhitungan.php">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#"><img src="../img/gmd.png" width="50"></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+      <a class="navbar-brand" href="#"><img src="../img/gmd1.png" width="70"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,14 +79,12 @@ if (!isset($_SESSION['status'])) {
             <font size="4"><b>Home</b> </font><span class="sr-only">(current)</span>
           </a>
           <a class="nav-link" href="data_sepatu_sport.php">
-            <font size="4"><b>Data Sepatu Sport</b></font>
+            <font size="4"><b>Data Pantai</b></font>
           </a>
           <a class="nav-link" href="laporan.php">
-            <font size="4"><b>Laporan</b></font>
+            <font size="4"><b>Hasil</b></font>
           </a>
-          <a class="nav-link" href="tentang.php">
-            <font size="4"><b>Tentang</b></font>
-          </a>
+          
           <!-- membuat tobol logout menjadi lebih ke kanan dan bisa menyesuaikan di mobile juga. 1&nbsp = 1x spasi -->
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -100,10 +98,28 @@ if (!isset($_SESSION['status'])) {
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a class="log nav-link" href="../logout.php">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          
+          <!-- <a class="log nav-link" href="../logout.php">
+            <font size="4"><b>Logout</b></font>
+            <img src="../img/logout.png" width="30">
+          </a> -->
+          
+          <a class="log nav-link m-auto" href="../logout.php">
             <font size="4"><b>Logout</b></font>
             <img src="../img/logout.png" width="30">
           </a>
+
         </div>
       </div>
     </nav>
@@ -111,11 +127,11 @@ if (!isset($_SESSION['status'])) {
 
   <br>
   <div class="container bg-light shadow p-3 mb-5">
-    <div class="alert alert-info">
-      <center><b>SELAMAT DATANG KONSUMEN</b></center>
+    <div class="alert alert-secondary">
+      <center><b>SELAMAT DATANG USER</b></center>
     </div>
     <center>
-      <font size="5" class="judul"><b>Implementasi Metode MOORA dalam Sistem Pendukung Keputusan Pemilihan Sepatu Sport Terbaik(Study Kasus : Toko Gajah Mada Fun Shop)”</b></font>
+      <font size="5" class="judul"><b>Sistem Pendukung Keputusan Pemilihan Wisata Pantai Terbaik di Kabupaten Malang</b></font>
     </center>
 
     <br><br>
@@ -124,7 +140,7 @@ if (!isset($_SESSION['status'])) {
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../img/galeri/4.JPG" width="300" class="d-block w-100" alt="...">
+            <img src="../img/galeri/1.JPG" width="300" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
             <img src="../img/galeri/2.JPG" width="300" class="d-block w-100" alt="...">
@@ -132,30 +148,7 @@ if (!isset($_SESSION['status'])) {
           <div class="carousel-item">
             <img src="../img/galeri/3.JPG" width="300" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item ">
-            <img src="../img/galeri/1.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/5.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/6.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/7.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item ">
-            <img src="../img/galeri/9.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/10.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/11.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="../img/galeri/12.JPG" width="300" class="d-block w-100" alt="...">
-          </div>
+          
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -171,9 +164,9 @@ if (!isset($_SESSION['status'])) {
     <br>
   </div>
 
-  <div class="col-md-12 bg-primary">
+  <div class="col-md-12 bg-secondary">
     <div class="copyright">
-      <h5>Andika Prayoga 2021</h5>
+      <h6>Copyright&copy; argianriska 2022</h6>
     </div>
   </div>
 

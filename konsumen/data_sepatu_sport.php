@@ -38,7 +38,7 @@ if (isset($_POST['cari'])) {
 
   <style>
     body {
-      background-color: #f0f0f0;
+      background-image: url(../img/galeri/22.jpg);
     }
 
     .container {
@@ -83,8 +83,8 @@ if (isset($_POST['cari'])) {
 </head>
 
 <body bgcolor="f0f0f0">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand" href="#"><img src="../img/gmd.png" width="50"></a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+    <a class="navbar-brand" href="#"><img src="../img/gmd1.png" width="70"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -94,27 +94,36 @@ if (isset($_POST['cari'])) {
           <font size="4"><b>Home</b> </font><span class="sr-only">(current)</span>
         </a>
         <a class="nav-link" href="data_sepatu_sport.php">
-          <font size="4"><b>Data Sepatu Sport</b></font>
+          <font size="4"><b>Data Pantai</b></font>
         </a>
         <a class="nav-link" href="laporan.php">
-          <font size="4"><b>Laporan</b></font>
+          <font size="4"><b>Hasil</b></font>
         </a>
-        <a class="nav-link" href="tentang.php">
-          <font size="4"><b>Tentang</b></font>
-        </a>
+        
         <!-- membuat tobol logout menjadi lebih ke kanan dan bisa menyesuaikan di mobile juga. 1&nbsp = 1x spasi -->
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;
         <a class="log nav-link" href="../logout.php">
           <font size="4"><b>Logout</b></font>
           <img src="../img/logout.png" width="30">
@@ -125,8 +134,8 @@ if (isset($_POST['cari'])) {
 
   <br>
   <div class="container bg-light shadow p-3 mb-5">
-    <div class="alert alert-info">
-      <center><b>DATA SEPATU SPORT</b></center>
+    <div class="alert alert-secondary">
+      <center><b>DATA PANTAI</b></center>
     </div>
     </form>
 
@@ -163,7 +172,7 @@ if (isset($_POST['cari'])) {
         <?php $tot = mysqli_num_rows($data_sepatu1);
         echo "Total Data : <b>" . $tot . "</b>";
         ?>
-        <tr class="bg-info">
+        <tr class="bg-secondary">
           <!-- <th>Pilih <br> (semua) <br>
               <input type="checkbox" onchange="checkAll(this)" name="chk[]">
             </th>-->
@@ -172,7 +181,7 @@ if (isset($_POST['cari'])) {
           <th>Merek (C1)</th>
           <th>Bahan (C2)</th>
           <th>Berat (C3)</th>
-          <th>Harga (C4)</th>
+          
         </tr>
 
         <?php foreach ($data_sepatu as $sepatu) { ?>
@@ -182,7 +191,7 @@ if (isset($_POST['cari'])) {
             <td><?= $sepatu['c1']; ?></td>
             <td><?= $sepatu['c2']; ?></td>
             <td><?= $sepatu['c3']; ?></td>
-            <td><?= $sepatu['c4']; ?></td>
+            
           </tr>
 
         <?php } ?>
@@ -195,9 +204,9 @@ if (isset($_POST['cari'])) {
 
   </div>
 
-  <div class="col-md-12 bg-primary">
+  <div class="col-md-12 bg-secondary">
     <div class="copyright">
-      <h5>Andika Prayoga 2021</h5>
+      <h6>Copyright&copy; argianriska 2022</h6>
     </div>
   </div>
 
